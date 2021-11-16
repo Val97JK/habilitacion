@@ -2,29 +2,26 @@
 import './App.css';
 import '../src/styles/V02.css'
 import '../src/styles/intMaePro.css'
-import Footer from './content/Footer';
-import Header from './content/Header';
-import MaestroPro from './pages/maestroPro';
-import MaestroUsuario from './pages/maeUsuario';
-import IntroPro from './pages/introPro';
-import Formu from './pages/Formu';
 import '../src/styles/indexFormu.css'
 import '../src/styles/indexinterRegis.css'
-import InterRegis from './pages/InterRegis';
 import '../src/styles/sistemaVentas.css'
-import MaestroVentas from './pages/MaestroVentas';
-import SistemaVentas from './pages/SistemaVentas';
+import React from 'react';
+import { Auth0Provider } from "@auth0/auth0-react";
+import Routess from './Routes/Routes';
 
 
 
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <SistemaVentas/>
-      <Footer/>
-    </div>
+  return (   
+
+  <Auth0Provider
+    domain="react0mae.us.auth0.com"
+    clientId="eOuAxnljFyXBd7gW9T15q7GW65fU8WkC"
+    redirectUri={window.location.origin}
+  >
+    <Routess />
+  </Auth0Provider>
   );
 }
 
