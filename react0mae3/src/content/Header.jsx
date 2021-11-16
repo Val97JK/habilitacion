@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header> 
             <div className="encabezado">
-                <h1 className="h111">Nombre de la empresa</h1>
+                <h1 className="h111" ><a className="h111" href="/home">Nombre de la empresa</a></h1>
             </div>
 
             <div className="menu" id="menu">
@@ -20,7 +20,7 @@ const Header = () => {
                 </li>
                 <li><a href="#">Mis Productos y Servicios</a>
                 
-                <ul>
+                <ul> 
                     <li><a href="#">Tipo de producto o servicio</a></li>
                     <li><a className="link" href="/maePro">Productos</a></li>
                     <li><a href="#">Servicios</a></li>
@@ -32,7 +32,8 @@ const Header = () => {
                 <li><a href="#">Mis ventas</a>
                 
                 <ul>
-                    <li><a className="link" href="/sisVentas"  target="_blank">Sistema de Ventas</a></li>
+                    <li><a className="link" href="/sisVentas"  >Sistema de Ventas</a></li>
+                    <li><a className="link" href="/maeVentas"  >Proveedores</a></li>
                     <li><a href="#">Renovación</a></li>
                     <li><a href="#">Formas de Pago</a></li>
                     <li><a href="#">Tipo de Documento</a></li>

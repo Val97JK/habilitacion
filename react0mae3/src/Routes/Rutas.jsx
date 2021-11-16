@@ -19,11 +19,11 @@ const Rutas = () => {
         <Router>
             <Routes>
             
-                <Route path='/home' element={<IntroPro/>}/>
-                <Route path='/maePro' element={<MaestroPro/>}/>
-                <Route path='/maeVentas' element={<MaestroVentas/>}/>
-                <Route path='/maeUsuario' element={<MaestroUsuario/>}/>
-                <Route path='/sisVentas' element={<SistemaVentas/>}/>
+                <Route path='/home' element={<Layout><IntroPro/></Layout>}/>
+                <Route path='/maePro' element={<Layout><MaestroPro/></Layout>}/>
+                <Route path='/maeVentas' element={<Layout><MaestroVentas/></Layout>}/>
+                <Route path='/maeUsuario' element={<Layout><MaestroUsuario/></Layout>}/>
+                <Route path='/sisVentas' element={<Layout><SistemaVentas/></Layout>}/>
                 <Route path='/signUp' element={<InterRegis/>}/>
                 <Route path='/' element={<Formu/>}/>
                 
