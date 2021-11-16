@@ -1,7 +1,6 @@
-import lupa from '../media/lupa.jpg'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import lupa from '../media/lupa.jpg'
 import { faFingerprint, faIdCard, faNetworkWired, faQuestionCircle, faUserCircle, faUserMinus } from '@fortawesome/free-solid-svg-icons';
 //<a href="#" title="Ir arriba">
 //<input type="submit" value="Ir arriba" className="bootton" styles='position:fixed;bottom:0;right:0;'/>
