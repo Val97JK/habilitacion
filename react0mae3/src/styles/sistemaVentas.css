@@ -1,0 +1,232 @@
+/*============ Ventas ============*/
+.datos_venta, .title_page{
+	width: 100%;
+	max-width: 900px;
+	margin-bottom: 10px;
+    padding: auto;
+    text-align: center;
+
+
+    
+}
+
+.datos_cliente{
+    width: 100%;
+	max-width: 900px;
+	margin-bottom: 0px;
+    padding: auto;
+    background-color:rgb(252, 134, 55);
+}
+
+tr.tr{
+    background-color: rgb(252, 134, 55);
+    border:10px solid black;
+}
+
+#a{
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 30px;
+}
+#cameBody{
+    background: white;
+
+
+}
+
+#h{
+    background-color: white;
+    color: black;
+}
+/*h2 {
+    border: 1px solid rgb(255, 102, 46);
+    margin-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    font-size: 22px;
+    background: rgb(255, 102, 46);
+    color: rgb(255, 255, 255);
+    margin:0px;
+
+}*/
+fieldset{
+     
+    
+
+    width: 50%;
+    right: 20px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+
+}
+#h44{
+    border:2px solid #78909C;
+    text-align: center;
+    background-color: rgb(252, 134, 55);
+}
+
+.imagen3{
+    
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position:absolute;
+
+    margin-top: 210px;
+    margin-left: 880px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#detalle_venta tr{
+	background-color: #FFF !important;
+    padding: 10px;
+
+}
+#detalle_venta td{
+	border-bottom: 1px solid #CCC;
+}
+.datos{
+	background-color: white;
+	
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.datos1{
+	background-color: white;
+	
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	
+	display: flex;
+    justify-content: space-between;
+   
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_cliente{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.icond{
+    font-size: 17px;
+   
+}
+.datos label{
+	margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input[type="text"].Vendedor{
+    width: 50%;
+    text-align: left;
+}
+
+input[type="date" i], input[type="text"].txt, input[type="number"] {
+      
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.wd30{
+	
+    margin-top: 0px;
+    padding: 10px;
+    padding-right: 2px;
+    padding-top: 1px;
+    display: inline-grid;
+    justify-items: stretch;
+}
+.Direccion_cliente{
+    padding-right: 342px;
+}
+
+.wd50{
+	
+    display: contents;
+}
+.wd100{
+    width: 50%;
+}
+
+#div_registro_cliente, #add_product_venta{
+	display: none;
+}
+.displayN{
+	display: none;
+}
+.tbl_venta{
+	max-width: 900px;
+	margin: auto 3,6;
+    border: solid #78909C;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    padding-left: initial;
+    border-spacing: revert;
+    width: 750px;
+}
+.tbl_venta tfoot td{
+	font-weight: bold;
+    text-align: end;
+} 
+.textright{
+	text-align: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+.btn_anular{
+	background-color: #bdbaba;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #FFF;
+}
