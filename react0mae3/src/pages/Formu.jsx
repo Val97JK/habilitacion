@@ -1,8 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
+import { useAuth0 } from "@auth0/auth0-react"; 
+import { Link } from 'react-router-dom';
 
 function Formu (){
+    
+    
+    const { loginWithRedirect } = useAuth0();
+    const {logout} = useAuth0();
+    const {user, isAuthenticated} = useAuth0();
+    
+    
+
     return(
+        
         <div id="cameBody"> 
             <body>
                 <form className="formulario1">
@@ -15,7 +26,7 @@ function Formu (){
                         <p className="pp">
                             Para poder ingresar al sistema se debe validar sus credenciales en el siguiente formulario:
                         </p>
-                        <div className="input-contenedores"> 
+                        {/* <div className="input-contenedores"> 
                         <FontAwesomeIcon className="icone" icon={ faEnvelope}/>
                             <input type="text" className="text" placeholder="Digite su Gmail" 
                             oninvalid="this.setCustomValidity('Tienes que ingresar su Gmail!')" oninput="this.setCustomValidity('')"
@@ -26,10 +37,12 @@ function Formu (){
                             <input type="password" placeholder="Digite su Contrasena" 
                             oninvalid="this.setCustomValidity('Tienes que ingresar su Contrasena!')" oninput="this.setCustomValidity('')"
                             required /> 
-                        </div>
-                        <a className= "buttonn" href="/home"> Ingresar</a>
+                        </div> */}
+                        {/* <a className= "buttonn" href="/home" onClick={() => loginWithRedirect()}> Log In</a>
                         <p className="pp" styles="margin-left: 50px;">¿No tienes cuenta? <a className= "link" href="/signUp">Registrate</a>
-                        </p>
+                        </p> */}
+                        <Link to="/home" className="nav-link active" className= "buttonn" onClick={() => loginWithRedirect()}>Ingresar</Link>
+
                     </div>
 
                 </form>

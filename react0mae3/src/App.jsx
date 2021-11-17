@@ -19,7 +19,7 @@ function App() {
       <Auth0Provider
     domain="react0mae.us.auth0.com"
     clientId="eOuAxnljFyXBd7gW9T15q7GW65fU8WkC"
-    redirectUri={window.location.origin}
+    redirectUri='http://localhost:3000/home'
   >
     <Rutas />
   </Auth0Provider>
